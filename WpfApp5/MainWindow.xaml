@@ -15,9 +15,36 @@
 
 
 
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel>
+                <ListBox BorderThickness="0" Background="DeepSkyBlue" Grid.ColumnSpan="2" Name="lstbx1" Height="350" Margin="24">
+                    
+                </ListBox>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <ListBox BorderThickness="0" Background="DeepSkyBlue" Grid.ColumnSpan="2" Margin="20" Name="lstbx2" Height="350"></ListBox>
+            </StackPanel>
+
+            
+            
+            
+            
+            
+        </Grid>
+
         
-            <ListBox Name="lstbx" Background="SkyBlue" Width="300" Height="300"></ListBox>
-        
+
+
+
+
+
+
 
 
 

@@ -26,8 +26,8 @@ namespace WpfApp5
         }
         private void SendBtn_Click(object sender, RoutedEventArgs e)
         {
-            //lstbx1.HorizontalAlignment = HorizontalAlignment.Left;
-            lstbx1.Items.Add(new Message
+            lstbx.HorizontalAlignment = HorizontalAlignment.Left;
+            lstbx.Items.Add(new Message
             {
                 Text = ChatTxtBox.Text,
                 time = DateTime.Now.ToShortTimeString()
@@ -37,9 +37,9 @@ namespace WpfApp5
 
             if (ChatTxtBox.Text == "Salam" || ChatTxtBox.Text == "salam")
             {
-                //lstbx.HorizontalAlignment = HorizontalAlignment.Right;
-                lstbx2.Items.Add("\n");
-                lstbx2.Items.Add(AIservice.GetResponseSalam());
+                lstbx.HorizontalAlignment = HorizontalAlignment.Right;
+                lstbx.Items.Add("\n");
+                lstbx.Items.Add(AIservice.GetResponseSalam());
             }
 
 

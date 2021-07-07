@@ -59,6 +59,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="AIservice.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,6 +98,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\chaticon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\chatbackground.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

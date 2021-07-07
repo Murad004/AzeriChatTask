@@ -13,9 +13,20 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <ListBox Name="lstbx" Margin="35">
-          
-        </ListBox>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Margin="20" Background="SkyBlue" Grid.Column="0">
+                <ListBox Name="lstbx1" Background="SkyBlue"></ListBox>
+            </StackPanel>
+            <StackPanel Margin="20" Background="SkyBlue" Grid.Column="1">
+                <ListBox Name="lstbx2" Background="SkyBlue"></ListBox>
+            </StackPanel>
+            
+        </Grid>
         
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>

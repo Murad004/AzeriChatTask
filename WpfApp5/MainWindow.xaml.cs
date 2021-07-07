@@ -24,19 +24,26 @@ namespace WpfApp5
         {
             InitializeComponent();
         }
-
         private void SendBtn_Click(object sender, RoutedEventArgs e)
         {
-
-            lstbx.Items.Add(new Message
+            //lstbx1.HorizontalAlignment = HorizontalAlignment.Left;
+            lstbx1.Items.Add(new Message
             {
                 Text = ChatTxtBox.Text,
                 time = DateTime.Now.ToShortTimeString()
             });
 
 
-            ChatTxtBox.Text = String.Empty;
 
+            if (ChatTxtBox.Text == "Salam" || ChatTxtBox.Text == "salam")
+            {
+                //lstbx.HorizontalAlignment = HorizontalAlignment.Right;
+                lstbx2.Items.Add("\n");
+                lstbx2.Items.Add(AIservice.GetResponseSalam());
+            }
+
+
+            ChatTxtBox.Text = String.Empty;
         }
     }
 }
